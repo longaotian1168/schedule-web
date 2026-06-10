@@ -20,8 +20,7 @@ DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 BASE_URL = "https://api.deepseek.com/v1"
 MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
 DB_PATH = os.environ.get("DB_PATH", "schedules.db")
-logger.info(f"DEEPSEEK_API_KEY loaded: {'YES' if DEEPSEEK_API_KEY else 'NO'}")
-logger.info(f"ENV keys: {[k for k in os.environ if 'DEEP' in k.upper()]}")
+
 PORT = int(os.environ.get("PORT", "8000"))
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
