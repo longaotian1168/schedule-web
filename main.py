@@ -188,7 +188,7 @@ def _parse_tool_tags(text):
 def _chat(messages, tools=None):
     payload = {"model": MODEL, "messages": messages, "max_tokens": 1024}
     if tools:
-        payload["tools"] = tools; payload["tool_choice"] = "auto"
+        payload["tools"] = tools; 
     data = json.dumps(payload, ensure_ascii=False).encode()
     req = Request(f"{BASE_URL}/chat/completions", data=data,
                   headers={"Content-Type":"application/json","Authorization":f"Bearer {DEEPSEEK_API_KEY}"},
