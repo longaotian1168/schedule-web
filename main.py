@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from typing import Optional
 
 # ============ 配置 ============
-DEEPSEEK_API_KEY = "sk-0abaccc5afbe453fade2814473252555"  # Railway fix v3
+DEEPSEEK_API_KEY = "sk-0abaccc5afbe453fade2814473252555"
 
 BASE_URL = "https://api.deepseek.com/v1"
 MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
